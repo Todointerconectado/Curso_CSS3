@@ -83,6 +83,7 @@ p {
 
 /* Proceso de los comandos en img */
 .contenedor__img {
+    width: 95%;
     margin: 10px;
     max-width: 800px;
 }
