@@ -31,7 +31,6 @@
     <audio id="audio__inicio" autoplay src="/CSS/IMG/AUDIOS/audio2.mp3" type="audio/mp3"></audio>
     
     <main>
-        <h1 id="home"> Curso de CSS3 desde cero </h1>
         <header class="indice">
             <ul class="navegacion">
                 <h4> Indice: </h4>
@@ -52,6 +51,8 @@
         </header>
 
         <section>
+            <h1 id="home"> Curso de CSS3 desde cero </h1>
+
             <details>
                 <summary id="2"> Tres formas de aplicar CSS en el HTML (esta en forma cascada) </summary>
                 <details>
@@ -66,103 +67,80 @@
                         </details>
                     </details>
                 </details>
-                        
 
-                        <li>
+                <details>
+                    <summary>Dentro del &lt;head&gt; aplicamos la etiqueta &lt;style&gt;</summary>
+                    <details>
+                        <summary>Dentro de &lt;head&gt; y &lt;body&gt; </summary>
+                        Podes llamar a las etiquetas HTML, Class y id para aplicarles los estilos.
+                        <section>
+                            &lt;head&gt; <br>
+                            &nbsp; &nbsp; &lt;style&gt; <br>
                             <details>
-                                <summary>Dentro del &lt;head&gt; aplicamos la etiqueta &lt;style&gt;</summary>
-                                <ul>
-                                    <li>
-                                        <details>
-                                            <summary>Dentro de &lt;head&gt; y &lt;body&gt; </summary>
-                                            Podes llamar a las etiquetas HTML, Class y id para aplicarles los estilos.
-                                            <section>
-                                                &lt;head&gt; <br>
-                                                    &nbsp; &nbsp; &lt;style&gt; <br>
-                                                        <ul>
-                                                            <li>
-                                                                <details>
-                                                                    <summary>Etiquetas</summary>
-                                                                    h1 { <br>
-                                                                        &nbsp; &nbsp; color: blue; <br>
-                                                                    } <br>
-                                                                    h2 { <br>
-                                                                        &nbsp; &nbsp; color: green; <br>
-                                                                    }
-                                                                    <details>
-                                                                        <summary>Muestra</summary>
-                                                                        <h1 class="etiqueta__h1">h1: Probamos la etiqueta &lt;style&gt; dentro del &lt;head&gt;</h1>
-                                                                        <h2 class="etiqueta__h2">Etiqueta h2</h2>
-                                                                    </details>
-                                                                </details>
-                                                            </li>
-                                                            <li>
-                                                                <details>
-                                                                    <summary>Class</summary>
-                                                                    .class__h2 { <br>
-                                                                        &nbsp; &nbsp; color: salmon; <br>
-                                                                    }
-                                                                    <details>
-                                                                        <summary>Muestra</summary>
-                                                                        <h2 class="class__h2" >h2 con class</h2>
-                                                                    </details>
-                                                                </details>
-                                                            </li>
-                                                            <li>
-                                                                <details>
-                                                                    <summary>id</summary>
-                                                                    #id__h2 { <br>
-                                                                        &nbsp; &nbsp; color: red; <br>
-                                                                    }
-                                                                    <details>
-                                                                        <summary>Muestra</summary>
-                                                                        <h2 id="id__h2" >h2 con id</h2>
-                                                                    </details>
-                                                                </details>
-                                                            </li>
-                                                            <li>
-                                                                <details>
-                                                                    <summary>combinaciones</summary>
-                                                                    h2.class__brown { <br>
-                                                                        &nbsp; &nbsp; color: brown; <br>
-                                                                    }
-                                                                    <details>
-                                                                        <summary>Muestra</summary>
-                                                                        <h2 class="class__brown"> etiqueta: h2 y class="class__brown" </h2>
-                                                                        <h2> etiqueta: h2 </h2>
-                                                                        <h2 class="class__brown"> etiqueta: h2 y class="class__brown" </h2>
-                                                                    </details>
-                                                                </details>
-                                                            </li>
-                                                        </ul>
-                                                    &nbsp; &nbsp; &lt;/style&gt; <br>
-                                                &lt;/head&gt;
-                                            </section>
-                                        </details>
-                                    </li>
-                                </ul>
+                                <summary>Etiquetas</summary>
+                                h1 { <br>
+                                    &nbsp; &nbsp; color: blue; <br>
+                                } <br>
+                                h2 { <br>
+                                    &nbsp; &nbsp; color: green; <br>
+                                }
+                                <details>
+                                    <summary>Muestra</summary>
+                                    <h1 class="etiqueta__h1">h1: Probamos la etiqueta &lt;style&gt; dentro del &lt;head&gt;</h1>
+                                    <h2 class="etiqueta__h2">Etiqueta h2</h2>
+                                </details>
                             </details>
-                        </li>
-
-                        <li>
-                            <details id="cambiar__fondo">
-                                <summary>Creamos las hojas de estilos</summary>
-                                Dentro del head enlazamos la hoja de estilo con la etiqueta &lt;link&gt; <br>
-                                <ul>
-                                    <li class="li__color">&lt;link rel="stylesheet" href="/style.css"&gt;</li>
-                                    <li>Atributo rel="stylesheet" tipo de documenta al que estoy llamando. </li>
-                                    <li class="li__color">Atributo href="/style.css" (dentro de las comillas va la dirección del archivo</li>
-                                    <li>Este es la forma recomendable para los estilos.</li>
-                                    <li>Acontinuación escribimos el css en su respectivo archivo.</li>
-                                </ul>
+                            <details>
+                                <summary>Class</summary>
+                                .class__h2 { <br>
+                                    &nbsp; &nbsp; color: salmon; <br>
+                                }
+                                <details>
+                                    <summary>Muestra</summary>
+                                    <h2 class="class__h2" >h2 con class</h2>
+                                </details>
                             </details>
-                        </li>
+                            <details>
+                                <summary>id</summary>
+                                #id__h2 { <br>
+                                    &nbsp; &nbsp; color: red; <br>
+                                }
+                                <details>
+                                    <summary>Muestra</summary>
+                                    <h2 id="id__h2" >h2 con id</h2>
+                                </details>
+                            </details>
+                            <details>
+                                <summary>combinaciones</summary>
+                                h2.class__brown { <br>
+                                    &nbsp; &nbsp; color: brown; <br>
+                                }
+                                <details>
+                                    <summary>Muestra</summary>
+                                    <h2 class="class__brown"> etiqueta: h2 y class="class__brown" </h2>
+                                    <h2> etiqueta: h2 </h2>
+                                    <h2 class="class__brown"> etiqueta: h2 y class="class__brown" </h2>
+                                </details>
+                            </details>
+                            &nbsp; &nbsp; &lt;/style&gt; <br>
+                            &lt;/head&gt;
+                        </section>
+                    </details>
+                </details>
 
-                        <li> 
-                            <a href="/Clases/Clase_1/Clase_1.html" target="_blanck" >Ir a la página</a>
-                        </li>
+                <details id="cambiar__fondo">
+                    <summary>Creamos las hojas de estilos</summary>
+                    Dentro del head enlazamos la hoja de estilo con la etiqueta &lt;link&gt; <br>
+                    <ul>
+                        <li class="li__color">&lt;link rel="stylesheet" href="/style.css"&gt;</li>
+                        <li>Atributo rel="stylesheet" tipo de documenta al que estoy llamando. </li>
+                        <li class="li__color">Atributo href="/style.css" (dentro de las comillas va la dirección del archivo</li>
+                        <li>Este es la forma recomendable para los estilos.</li>
+                        <li>Acontinuación escribimos el css en su respectivo archivo.</li>
+                    </ul>
+                </details>
 
-                    
+                <a href="/Clases/Clase_1/Clase_1.html" target="_blanck" >Ir a la página</a>
             </details>
 
             <details>
