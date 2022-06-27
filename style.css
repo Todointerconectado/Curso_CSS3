@@ -18,7 +18,7 @@ body {
 
 /*  */
 main {
-    width: 68%;
+    width: 80%;
     background-color: rgba(255, 255, 255, .5);
     margin: 10px;
     padding: 0px 0px 20px 0px;
@@ -64,8 +64,9 @@ a {
 
 /* Contenedor de los títulos principales de la lista de comandos */
 details {
+    background-color: white;
     border-radius: 5px;
-    margin-bottom: 10px;
+    margin: 10px;
     margin-right: 10px;
     border-bottom: 1px solid #feffff;
     box-shadow: 1px 1px 5px rgba(0,0,0,1);
@@ -115,5 +116,5 @@ figcaption {
 }
 
 iframe {
-    height: 840px;
+    height: 600px;
 }
