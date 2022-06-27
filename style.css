@@ -113,3 +113,7 @@ figcaption {
 #cambiar__fondo .li__color {
     color: #860808;
 }
+
+iframe {
+    height: 840px;
+}

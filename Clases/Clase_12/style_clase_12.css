@@ -156,20 +156,6 @@ p {
     background-color: rgb(164, 239, 214);
     margin: 10px auto;
 }
-/* --------------- modelo --------------- */
-.padre {
-    width: 60%;
-    height: 200px;
-    background-color: rgb(164, 239, 214);
-    margin: 10px auto;
-}
-.hijos {
-    background-color: rgb(29, 198, 142);
-    margin: 5px;
-    padding: 5px;
-    /* display: flex; */
-    /* justify-content: center; */
-}
 
 /* --------------------------- Estilos de Muestra --------------------------- */
 .padre1 {
@@ -232,7 +218,7 @@ p {
 .padre_align-self {
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-self: flex-start;
 }
 .martes_align-self_flex-start {
     align-self: flex-start;
@@ -340,4 +326,14 @@ p {
 .martes_order {
     order: 1;
     background-color: yellow;
+}
+
+/* Animación en los contenedores */
+details[open] summary ~ * {
+    cursor: pointer;
+    animation: sweep .5s ease;
+}
+@keyframes sweep {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0px); }
 }
