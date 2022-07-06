@@ -10,17 +10,16 @@ body {
 /* Fondo con movimiento */
 .fondo__video {
     width: 100%;
+    top: 0;
     position: fixed;
-    min-width: 100%;
-    transform: tr translateX(-50%) translateY(-50);
     z-index: -1;
 }
 
-/*  */
+/* contenedor maestro */
 main {
-    width: 80%;
+    width: 700px;
     background-color: rgba(255, 255, 255, .5);
-    margin: 10px;
+    margin: 250px auto 0px;
     padding: 0px 0px 20px 0px;
     border: 1px solid rgb(100, 97, 97);
     box-shadow: 2px 2px 5px rgb(0, 0, 0);
